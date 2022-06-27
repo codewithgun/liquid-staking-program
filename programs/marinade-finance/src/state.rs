@@ -22,7 +22,7 @@ pub mod order_unstake;
 pub mod update;
 
 #[account]
-#[derive(Debug)]
+#[derive(Debug, AnchorDeserialize)]
 pub struct State {
     pub msol_mint: Pubkey,
 
